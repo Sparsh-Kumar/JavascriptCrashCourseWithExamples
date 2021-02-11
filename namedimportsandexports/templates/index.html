@@ -1,0 +1,32 @@
+<!doctype html>
+    <html>
+
+        <head>
+            <title>ImportsAndExports</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="/styles.css">
+
+            <!-- 
+                In order for us to make use of import and exports
+                in Javascript, we must host our front end page using
+                some server, It can be on xampp, or php or node.js server,
+                but without making use of some server to host the page (on which
+                the js code has to be run), it may lead to some error,
+                as you can see even in the case of angular, a server is used to host the
+                frontend application, so in Angular we can extensively make use of
+                import and export statements in Javascript also to make use of a Javascript file
+                that can make use of import and export statements we have to always make sure that
+                the type must always be module, rather than simple text/javascript, otherwise if
+                we keep the type = text/javascript then the Javascript file that we are using in HTML
+                using src attribute cannot make use of import and export statements in it.
+            -->
+
+            <script type="module" src="/myscript.js"></script>
+        </head>
+
+        <body>
+            <h1>HomePage</h1>
+        </body>
+
+    </html>
