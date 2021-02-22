@@ -14,12 +14,15 @@ class Animal {
         this.age = age;
     }
     
-    static myStaticFunction () { // static functions cannot access the public variables
+    static myStaticFunction () { // static functions cannot access the public variables it can only access a public variable if that public variable has been made inside the scope of that static function.
+
+        this.publicVariable = 'this is the public variable inside a static function'
         return {
             functionType: 'static',
             classInfo: {
                 className: 'Animal',
-                classType: 'Parent'
+                classType: 'Parent',
+                publicVariable: this.publicVariable
             }
         }
     }
