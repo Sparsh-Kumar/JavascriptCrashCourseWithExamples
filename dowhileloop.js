@@ -15,7 +15,7 @@ do {
 
 
 // Second example of do while loop
-// do part in a do while loop executes n + 1 times, where n = no. of times the condition in the while scope remain true
+// do part in a do while loop executes even if the 1st time the condition is false, if the first time condition is not false, then it will execute in the same manner (and same times) as while loop or for loop
 
 let startIndex = 0;
 do {
