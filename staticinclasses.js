@@ -9,6 +9,15 @@
 // property name
 
 class Animal {
+    
+    // constructor is the function that gets called when we made the object of the class
+    // as we access Static properties of a class without making the object of the class
+    // therefore constructor never gets called, therefore, if we try to initialize some 
+    // static value in the constructor of the class then 
+    // using the syntax "Classname,staticProperty" will not call the constructor method
+    // of the class as we are not making the object of the class,
+    // therefore constructor will never get called in that case and property will never get initialized
+
     constructor ( name = undefined, age = undefined ) {
         this.name = name;
         this.age = age;
