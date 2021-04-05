@@ -17,3 +17,11 @@ console.log (`value = ${numeric1}, type = ${typeof numeric1}`);
 console.log (`value = ${numeric2}, type = ${typeof numeric2}`);
 console.log (`value = ${n}, type = ${typeof n}`);
 console.log (`value = ${m}, type = ${typeof m}`);
+
+//IMPORTANT -  undefined typically means a variable has been declared but not defined yet.
+// for example let a; here we declare a variable but not assign anything, javascript by default will assign undefined to "a", if we just declare variable "a" and don't assign anything to it.
+// Null means an empty or non-existent value, the null is assigned to a variable explicitly by the programmer.
+
+// IMPORTANT RESULT BELOW
+console.log (undefined === null);
+console.log (undefined == null);
